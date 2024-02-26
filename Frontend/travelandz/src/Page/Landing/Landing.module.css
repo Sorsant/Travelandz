@@ -1,0 +1,37 @@
+.fondo {
+    background-color: #0a2075;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-attachment: fixed;
+
+}
+
+.botondeinicio {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.Box {
+    position: relative;
+    display: inline-block;
+    top: 5rem;
+    width: 50rem;
+    height: 15rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    margin: auto;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #091d69, #0b227d);
+    box-shadow: 20px 20px 60px #091b63,
+        -20px -20px 60px #0c2587;
+}
+
+.titleH1 {
+    margin-bottom: 20px;
+    color: yellow;
+    font-size: 25px;
+}
