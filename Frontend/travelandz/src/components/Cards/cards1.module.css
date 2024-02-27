@@ -1,0 +1,41 @@
+.Conteiner {
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    width: 800px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-height: calc(300px * 2 + 15px);
+    overflow: auto;
+    overflow-y: auto;
+    border-radius: 30px;
+    scrollbar-width: auto;
+
+}
+
+
+.Conteiner::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+.Conteiner::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+.Conteiner::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+    margin-left: 2px;
+}
+
+
+.Conteiner::-webkit-scrollbar-thumb {
+    background-color: #e28b08;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}

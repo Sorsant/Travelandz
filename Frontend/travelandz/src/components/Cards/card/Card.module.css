@@ -1,0 +1,56 @@
+.contenedor {
+    width: 300px;
+    height: 180px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: inset 22px 22px 44px rgba(255, 255, 255, 0.1),
+        inset -22px -22px 44px #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.imag {
+    margin-left: 50px;
+    width: 170px;
+    height: 90px;
+
+}
+
+.imagContainer {
+    background: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.direcction {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.modulo {
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.monto {
+    padding: 1px;
+    color: #ffffff;
+    background-color: #21af49;
+}
+
+.posicionm {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+}

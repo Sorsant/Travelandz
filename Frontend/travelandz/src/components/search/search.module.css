@@ -1,0 +1,39 @@
+.contenedor {
+    width: 550px;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: #FFFF;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.selectContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.marg {
+    margin-bottom: 30px;
+}
+
+
+.selectContainer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+select {
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #f6f6f6;
+}

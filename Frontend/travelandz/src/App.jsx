@@ -4,13 +4,15 @@ import Home from './Page/home/Home';
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Landing />} />
-          <Route path='/home' element={<Home />} />
 
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Landing />} />
+        <Route path='/home' element={<Home />} />
+        {/* <Route path='/home/:id' element={} />  */}
+
+
+      </Routes>
+
     </div>
   );
 }

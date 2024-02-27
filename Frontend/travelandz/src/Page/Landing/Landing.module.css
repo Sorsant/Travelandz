@@ -1,5 +1,5 @@
 .fondo {
-    background-color: #0a2075;
+    background: url(https://images.pexels.com/photos/5152060/pexels-photo-5152060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -11,8 +11,8 @@
 
 .botondeinicio {
     margin-top: 10px;
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
 }
 
 .Box {
@@ -24,14 +24,15 @@
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
     margin: auto;
-    border-radius: 50px;
-    background: linear-gradient(145deg, #091d69, #0b227d);
-    box-shadow: 20px 20px 60px #091b63,
-        -20px -20px 60px #0c2587;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.075);
 }
 
 .titleH1 {
     margin-bottom: 20px;
-    color: yellow;
+    color: rgb(0, 0, 0);
     font-size: 25px;
 }
