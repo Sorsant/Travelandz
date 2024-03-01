@@ -5,3 +5,4 @@ export const GET_CATEGORY = 'GET_CATEGORY';
 export const GET_CAPACITY = 'GET_CAPACITY';
 export const GET_PRICE = 'GET_PRICE';
 export const GET_DATE = 'GET_DATE';
+export const GET_ID = 'GET_ID';

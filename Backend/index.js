@@ -1,8 +1,9 @@
-const server = require("./server");
+const server = require("./server.js");
+const { conn } = require("./db.js");
 
-const PORT = 3001;
 
-
-server.listen(PORT, async() => {
-  console.log(`Server raised in port: ${PORT}`);
+conn.sync({ force: false }).then(() => {
+  server.listen(3001, () => {
+    console.log("%s listening at 3001"); 
+  });
 });

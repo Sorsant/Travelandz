@@ -1,9 +1,10 @@
-import{GET_ALL_SERVICES,GET_SEARCH,GET_VEHICLE,GET_CATEGORY,GET_PRICE,GET_DATE} from './Actions-types';
+import{GET_ID,GET_ALL_SERVICES,GET_SEARCH,GET_VEHICLE,GET_CATEGORY,GET_PRICE,GET_DATE} from './Actions-types';
 
 const initialState ={
     allServices:[],
     allServicesCopy:[],
-    search:[]
+    search:[],
+    ID:[]
 };
 
 const reducer =(state=initialState, {type,payload}) => {
@@ -21,6 +22,8 @@ const reducer =(state=initialState, {type,payload}) => {
             return{...state,allServices:payload};
         case GET_DATE:
         return{...state,allServices:payload};
+        case GET_ID:
+            return{...state,ID:payload};
         default: 
                 return { ...state,allServices:payload };
         };

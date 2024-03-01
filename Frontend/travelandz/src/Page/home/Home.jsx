@@ -34,4 +34,3 @@ const Home = () => {
 }
 
 export default Home
-// https://codepen.io/igor0ser/pen/amJZvp   loader

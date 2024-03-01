@@ -1,4 +1,4 @@
-import{GET_ALL_SERVICES,GET_SEARCH,GET_VEHICLE,GET_CATEGORY,GET_CAPACITY,GET_PRICE,GET_DATE} from './Actions-types';
+import{GET_ID,GET_ALL_SERVICES,GET_SEARCH,GET_VEHICLE,GET_CATEGORY,GET_CAPACITY,GET_PRICE,GET_DATE} from './Actions-types';
 import axios from 'axios';
 
 export const getServices = ()=>{
@@ -69,7 +69,7 @@ export const handlerVehicles = (value)=>{
                     })
             }
             else if(value==="All"){
-           console.log(data)
+        //    console.log(data)
                 return dispatch({
                         type: GET_VEHICLE,
                         payload:data
@@ -229,6 +229,21 @@ export const handleDates = (value)=>{
             
         } catch (error) {
             console.error(error);
+        }
+    }
+}
+export const getIdTransfer =(id)=>{
+    const endpoint =`http://localhost:3001/app/services/${id}`
+    return async (dispatch)=>{
+        try {
+            const {data} = await axios.get(endpoint);
+            console.log(data)
+            return dispatch({
+                type:GET_ID,
+                payload:data
+            })
+        } catch (error) {
+            console.log(error)
         }
     }
 }
